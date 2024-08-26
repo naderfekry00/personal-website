@@ -5,7 +5,6 @@
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My Process](#my-process)
   - [Built With](#built-with)
@@ -23,12 +22,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size.
 - See hover states for all interactive elements on the page.
 
-### Screenshot
-
-![Screenshot of the project](./screenshot.jpg)
 
 ### Links
-- Live Site URL: [https://naderfekry00.github.io/personal-website/](#)
+- Live Site URL: https://naderfekry00.github.io/personal-website/
 
 ## My Process
 
