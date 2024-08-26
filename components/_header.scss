@@ -1,0 +1,94 @@
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  z-index: -1;
+  background-color: var(--color-background);
+}
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+/* هنا بقوله لو الكونتينر بيحتوي علي السكشن الفلاني (دا معني هاذ) ومترجتينه يعني واقفين عليه فروح للكلاس الفلاني واديها الخصائص التاليه */
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+.burger__menu-checkbox {
+  display: none;
+}
+
+/* start of toggle_switch component */
+.toggle__switch {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  padding: 3rem 0;
+}
+.toggle__title {
+  align-self: center;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+.toggle__checkbox {
+  display: none;
+}
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  width: 4.5rem;
+  height: 2.2rem;
+  border-radius: 1.5rem;
+  align-self: center;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: 0.3s;
+}
+.toggle__label::after {
+  content: "";
+  background-color: var(--color-white);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: block; /*so it can take width and height and show up*/
+  transition: 0.3s;
+}
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2.1rem);
+}
+/* End of toggle component */
+/* End of header */

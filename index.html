@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Project (Nader Fekry)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="background-video" autoplay loop muted>
+        <source src="./video/video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <label for="burger__menu" class="burger__menu">
+          <div class="burger__menu-bar"></div>
+          <div class="burger__menu-bar"></div>
+          <div class="burger__menu-bar"></div>
+        </label>
+        <input
+          type="checkbox"
+          id="burger__menu"
+          class="burger__menu-checkbox"
+        />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle__switch">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle__checkbox"
+            class="toggle__checkbox"
+          />
+          <label for="toggle__checkbox" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Nader Fekry</span>, a co-founder
+            of <a href="#" class="bio__almadrasa">NotYet.com</a>, Software
+            Engineer and a content creator who publish content on
+            <a href="#" class="bio__facebook">Facebook</a>,
+            <a href="#" class="bio__twitter">Twitter</a>,
+            <a href="#" class="bio__linkedin">LinkedIn</a> and
+            <a href="#" class="bio__youtube">Youtube</a>.
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="./mohamedAbusreaResume.pdf" class="bio__links download-cv"
+            >Download CV <span class="arrow-down">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            src="./images/person-image.png"
+            alt="Mohamed Abusrea image"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2 class="skills__heading">SKILLS</h2>
+        <ul class="skills__list">
+          <li class="skills__coloumn">
+            <h2 class="skill__name">HTML</h2>
+            <span class="skill__years">8 years</span>
+          </li>
+          <li class="skills__coloumn">
+            <h2 class="skill__name">CSS</h2>
+            <span class="skill__years">8 years</span>
+          </li>
+          <li class="skills__coloumn">
+            <h2 class="skill__name">Javascript</h2>
+            <span class="skill__years">8 years</span>
+          </li>
+          <li class="skills__coloumn">
+            <h2 class="skill__name">React</h2>
+            <span class="skill__years">4 years</span>
+          </li>
+          <li class="skills__coloumn">
+            <h2 class="skill__name">Redux</h2>
+            <span class="skill__years">3 years</span>
+          </li>
+          <li class="skills__coloumn">
+            <h2 class="skill__name">React testing library</h2>
+            <span class="skill__years">1 year</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="media">
+        <video
+          class="media__video"
+          poster="./images/thumbnail.jpg"
+          controls
+          muted
+        >
+          <source src="./video/video.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="projects__header">MY FEATURED<br />PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            src="./images/project-1.jpg"
+            alt="project-1 image "
+            class="projects__image"
+          />
+          <div class="projects__overview">
+            <h3 class="projects__overview--header">Quran Tab<br />Extension</h3>
+            <p class="projects__overview--paragraph">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+              class="projects__overview--links"
+              target="_blank"
+              >Chrome link</a
+            >
+            <a
+              href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+              class="projects__overview--links space_between_links"
+              target="_blank"
+              >Edge link</a
+            >
+          </div>
+          <div class="projects__overview">
+            <h3 class="projects__overview--header">
+              Quran Station<br />Extension
+            </h3>
+            <p class="projects__overview--paragraph">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              href="https://chromewebstore.google.com/detail/quran-station/angdimijeelplemmdnedhnjidadfphom"
+              class="projects__overview--links"
+              target="_blank"
+              >Chrome link</a
+            >
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/quran-station/"
+              class="projects__overview--links space_between_links"
+              target="_blank"
+              >Firefox link</a
+            >
+            <a
+              href="https://microsoftedge.microsoft.com/addons/detail/quran-station/ebhikjobpdpkkaimiebhdlmfhogobbaf"
+              class="projects__overview--links space_between_links"
+              target="_blank"
+              >Edge link</a
+            >
+          </div>
+          <img
+            src="./images/project-2.jpg"
+            alt="project-2 image "
+            class="projects__image second_image"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients">
+        <h2 class="clients__header">
+          What My<br />
+          Clients Says
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="opinion">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="opinion">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="opinion">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__socials">
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a href="mailto:example@gmail.com" class="contact__email"
+            >example@gmail.com</a
+          >
+          <div class="contct__social-icons">
+            <img
+              src="./images/brand/facebook.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/brand/twitter.svg"
+              alt="twitter icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/brand/instagram.svg"
+              alt="instagram icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/brand/github.svg"
+              alt="github icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/brand/youtube.svg"
+              alt="youtube icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/brand/LinkedIn.svg"
+              alt="linkedin icon"
+              class="social-icon"
+            />
+          </div>
+        </div>
+        <div class="contact__form">
+          <h2 class="contact__form--header">
+            Let's Work <br />
+            Together!
+          </h2>
+
+          <form action="results.html" class="form">
+            <div class="contact__form--inputs">
+              <input
+                type="text"
+                name="Full Name"
+                class="contact__form--input"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="tel"
+                name="Phone Number"
+                class="contact__form--input"
+                placeholder="Phone Number"
+                required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </div>
+            <textarea
+              class="contact__form--input message-area"
+              name="message"
+              id="message"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              class="contact__form--button"
+              value="Send Message"
+            />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">&copy; 2024 by Nader Fekry</footer>
+    </div>
+  </body>
+</html>

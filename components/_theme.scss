@@ -1,0 +1,13 @@
+/* Dark theme */
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: #03a696;
+  --color-link-bg: #03a696;
+  --color-grey: #080808;
+  --color-input-border: var(--color-white);
+}
+html:has(.toggle__checkbox:checked) .background-video {
+  opacity: 0.2;
+}
+/* End of Dark theme */

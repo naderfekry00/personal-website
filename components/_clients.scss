@@ -1,0 +1,42 @@
+/* start of clients component */
+.clients {
+  position: relative;
+  display: grid;
+  padding: 11rem 0;
+  user-select: none;
+}
+.clients::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-grey);
+  z-index: -1;
+  align-self: center;
+  justify-self: center;
+}
+.clients__header {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 8.7rem;
+}
+.clients__opinions {
+  font-size: var(--font-size-40);
+  line-height: 1.7;
+}
+/*scrollدي الاوامر المسئوله عن ال*/
+.clients__wrapper {
+  /*دا الاب اللي هيشيل الاسكررول*/
+  display: flex; /* اول خطوه هنعرضهم جنب بعض*/
+  overflow-x: auto; /*رابع خطوه لما هيطلعوا برا حدود الصفحه هنرجعهم تاني بالامر ده ودا هيعملنا سكرروول علي محور اكس*/
+  scroll-snap-type: x mandatory; /*خامس خطوه ودي عشان السكررول مايتحركش ببطء ولكن يقفز من واحده للتانيه*/
+}
+.opinion {
+  /*scrool item دا*/
+  flex-basis: 100%; /*تاني خطوه هنقولهم كل واحد ياخد العرض الكامل بتاعه*/
+  flex-shrink: 0; /*تالت خطوه هنقولهم ماتحترموش الاب وخدوا كل المساحه او العرض اللي انتوا عايزينه ودا هيخليهم يطلعوا برا التدفق او برا حدود الصفحه*/
+  scroll-snap-align: start; /*snap سادس خطوه ودي تكملة الخطوه الخامسه عشان يتفعل ال*/
+}
+/*نهاية الاوامر المسئوله عن الاسكرروول*/
+/* end of clients component */

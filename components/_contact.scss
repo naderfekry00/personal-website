@@ -1,0 +1,62 @@
+/* start of contact component */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20rem;
+}
+.contact__socials {
+  align-self: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2rem 0;
+}
+.social-icon {
+  cursor: pointer;
+  transition: var(--transition-timing);
+  margin-right: 0.5rem;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.contact__form--header {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 8.7rem;
+}
+.contact__form--inputs {
+  display: flex;
+  gap: 3rem;
+}
+.contact__form--input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  flex: 1;
+}
+.message-area {
+  width: 100%;
+  margin-top: 4rem;
+}
+.contact__form--button {
+  border: 0;
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-medium);
+  padding: 1.7rem 1.8rem;
+  margin-top: 3.4rem;
+}
+.form:invalid::after {
+  content: "*";
+  color: red;
+  font-size: var(--font-size-40);
+}
+/* end of contact component */

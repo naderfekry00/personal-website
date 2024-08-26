@@ -1,0 +1,24 @@
+/* global */
+body {
+  font-family: var(--font-family-raleway);
+  font-size: 1.6rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -1;
+}
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  display: grid;
+  row-gap: 11rem;
+}
+/* end of global */

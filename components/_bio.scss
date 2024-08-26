@@ -1,0 +1,91 @@
+/* Bio component */
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.4rem;
+}
+.bio__data {
+  font-family: var(--font-family-poppins);
+}
+.bio__heading {
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-regular);
+  margin: 3rem 0 8rem;
+}
+.bio__name {
+  font-weight: var(--font-weight-semi-bold);
+}
+.bio__almadrasa {
+  color: var(--color-green);
+}
+.bio__facebook {
+  color: var(--color-blue);
+}
+.bio__twitter {
+  color: var(--color-light-blue);
+}
+.bio__linkedin {
+  color: var(--color-dark-blue);
+}
+.bio__youtube {
+  color: var(--color-red);
+}
+.bio__links {
+  font-size: 2.4rem;
+  font-weight: var(--font-weight-semi-bold);
+  font-family: var(--font-family-raleway);
+  text-decoration: none;
+}
+.say-hi-link {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 0.7rem 4.7rem;
+}
+.download-cv {
+  padding: 0.7rem 0;
+  margin-inline-start: 1.4rem;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.arrow-down {
+  display: inline-block;
+  animation: jump 1s infinite alternate ease-in-out;
+}
+.bio__pic-content {
+  display: flex;
+  align-items: flex-start;
+  justify-self: end;
+  position: relative;
+}
+.bio__pic-content::before {
+  content: "";
+  background-color: var(--color-box-img);
+  width: 100%;
+  height: 46rem;
+  position: absolute;
+  border-radius: 1.8rem;
+  z-index: -1;
+  box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+  top: 4.7rem;
+}
+.bio__pic {
+  width: 42.7rem;
+  height: 50.7rem;
+  align-self: flex-start;
+}
+/* End of Bio component */
